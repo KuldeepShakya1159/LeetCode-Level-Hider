@@ -1,0 +1,23 @@
+{
+    "manifest_version":3,
+    "name":"Leetecode Level Hider",
+    "version":"1.0",
+    "description":"Hiding the Questions Difficulty levels . To use - Add the extension and refresh the Leetcode page and It'll hide the difficulty level of all questions. ",
+
+    "icons":{
+        "16":"images/LeetCode16.png",
+        "32":"images/LeetCode32.png",
+        "48":"images/LeetCode48.png",
+        "128":"images/LeetCode148.png"
+    },
+
+    "content_scripts":[
+        {
+        "js":["scripts/content.js"],
+        "css":["scripts/content.css"],
+        "matches":[
+            "https://leetcode.com/*"
+        ]
+    }
+    ]
+}
