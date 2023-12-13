@@ -1,3 +1,38 @@
+
+/* problems page */
+
+/* div.mx-2.flex.items-center span.text-olive{
+  visibility: hidden;
+}
+
+div.mx-2.flex.items-center span.text-yellow{
+  visibility: hidden;
+}
+
+div.mx-2.flex.items-center span.text-pink {
+  visibility: hidden;
+} */
+
+/* individual question */
+
+div.relative.inline-flex.items-center.justify-center.text-caption.px-2.py-1.gap-1.rounded-full.bg-fill-secondary.text-difficulty-easy{
+
+  visibility: hidden;
+
+}
+
+div.relative.inline-flex.items-center.justify-center.text-caption.px-2.py-1.gap-1.rounded-full.bg-fill-secondary.text-difficulty-medium{
+  visibility: hidden;
+}
+
+div.relative.inline-flex.items-center.justify-center.text-caption.px-2.py-1.gap-1.rounded-full.bg-fill-secondary.text-difficulty-hard{
+  visibility: hidden;
+}
+
+
+
+
+
 #btnstart{
     height: 40px;
     width: 40px;
