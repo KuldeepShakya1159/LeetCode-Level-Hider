@@ -44,8 +44,8 @@ const hideDiff = () => {
     }
 
     let quespageesy = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-easy dark:text-difficulty-easy')
-    let quespagemed = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-medium dark:text-difficulty-medium true')
-    let quespagehard = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-hard dark:text-difficulty-hard true')
+    let quespagemed = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-medium dark:text-difficulty-medium ')
+    let quespagehard = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-hard dark:text-difficulty-hard ')
     if(quespageesy.length>0){
          quespageesy[0].style.visibility="hidden";
     }
