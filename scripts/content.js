@@ -11,12 +11,19 @@ window.onload = ()=>{
 let body = document.querySelector("body");
 let parentdiv = body.getElementsByClassName('odd:bg-layer-1 even:bg-overlay-1 dark:odd:bg-dark-layer-bg dark:even:bg-dark-fill-4')
 
+
+for(let i =0; i<parentdiv.length;i++){
+  let easydiv = parentdiv[i].getElementsByClassName('mx-2 flex items-center');
+  easydiv[4].style.visibility="hidden";
+  
+}
+
 const showDiff = () => {
     for(let i =0; i<parentdiv.length;i++){
 
         let easydiv = parentdiv[i].getElementsByClassName('mx-2 flex items-center')
         easydiv[4].setAttribute("style","box-sizing: border-box; flex: 84 0 auto; min-width: 0px; width: 84px;");
-        
+        // console.log(easydiv[4])
     }
 
     let quespageesy = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-easy dark:text-difficulty-easy')
@@ -44,8 +51,8 @@ const hideDiff = () => {
     }
 
     let quespageesy = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-easy dark:text-difficulty-easy')
-    let quespagemed = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-medium dark:text-difficulty-medium ')
-    let quespagehard = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-hard dark:text-difficulty-hard ')
+    let quespagemed = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-medium dark:text-difficulty-medium')
+    let quespagehard = body.getElementsByClassName('relative inline-flex items-center justify-center text-caption px-2 py-1 gap-1 rounded-full bg-fill-secondary text-difficulty-hard dark:text-difficulty-hard')
     if(quespageesy.length>0){
          quespageesy[0].style.visibility="hidden";
     }
@@ -63,7 +70,7 @@ const hideDiff = () => {
 
 let btnstart = document.createElement("button");
 btnstart.setAttribute("id","btnstart");
-btnstart.innerHTML="Hide";
+btnstart.innerHTML="Show";
 body.appendChild(btnstart);
 
 
